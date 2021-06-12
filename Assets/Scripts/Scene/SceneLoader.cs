@@ -7,13 +7,6 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] GameObject fadeScreen = null;
 
-    private string sceneName;
-
-    void Start()
-    {
-        sceneName = SceneManager.GetActiveScene().name;
-    }
-
     void Update()
     {
         if (Input.GetButtonDown("Restart"))
@@ -27,12 +20,12 @@ public class SceneLoader : MonoBehaviour
 
     public void Restart(float delay)
     {
-        StartCoroutine(WaitToLoad(delay, sceneName));
+        StartCoroutine(WaitToLoad(delay, SceneManager.GetActiveScene().name));
     }
 
     public void LoadMenu()
     {
-        StartCoroutine(WaitToLoad(2f, "Menu"));
+        StartCoroutine(WaitToLoad(2f, "Title"));
     }
 
     IEnumerator WaitToLoad(float delay, string scene)
