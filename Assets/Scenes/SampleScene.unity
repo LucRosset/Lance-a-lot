@@ -1146,9 +1146,10 @@ GameObject:
   - component: {fileID: 900923324}
   - component: {fileID: 900923326}
   - component: {fileID: 900923327}
+  - component: {fileID: 900923328}
   m_Layer: 9
   m_Name: Lance
-  m_TagString: Untagged
+  m_TagString: Lance
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1208,9 +1209,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.2
+  m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 712236a459e73c04ca0b27f3903a4d99, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1239,6 +1240,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9083b90c3646ff4c96a687d3abaf576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impaleDistance: 1
+--- !u!114 &900923328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900923322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aee410995518c749beb04a82f973b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1002353744
