@@ -164,9 +164,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.686771"
-     inkscape:cx="486.84729"
-     inkscape:cy="271.18337"
+     inkscape:zoom="2.3854544"
+     inkscape:cx="482.19707"
+     inkscape:cy="479.92046"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -179,7 +179,8 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -338,7 +339,9 @@
       </g>
     </g>
     <g
-       id="g3378">
+       id="g3378"
+       inkscape:export-xdpi="99.614487"
+       inkscape:export-ydpi="99.614487">
       <g
          id="g3273">
         <g
@@ -378,6 +381,35 @@
           </g>
         </g>
       </g>
+    </g>
+    <g
+       id="g3589">
+      <rect
+         style="fill:#a05a2c;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3380-7"
+         width="85.271675"
+         height="4.333663"
+         x="67.045395"
+         y="131.8277" />
+      <rect
+         style="fill:#803300;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect3380-7-6"
+         width="85.271675"
+         height="1.2280358"
+         x="67.045395"
+         y="132.60411" />
+      <path
+         id="path3382"
+         style="fill:#b3b3b3;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         inkscape:transform-center-x="-2.4547193"
+         inkscape:transform-center-y="-2.5532702e-06"
+         d="m 152.31732,124.28543 -3.58842,9.70897 3.58842,9.70897 2.48563,-6.72621 12.24267,-2.98276 -12.24267,-2.98225 z" />
+      <path
+         id="path3382-3"
+         style="fill:#808080;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         inkscape:transform-center-x="-1.7115045"
+         inkscape:transform-center-y="-1.7802152e-06"
+         d="m 152.34,127.22502 -2.50195,6.76938 2.50195,6.76938 1.73306,-4.68971 8.53595,-2.07967 -8.53595,-2.07931 z" />
     </g>
   </g>
 </svg>
