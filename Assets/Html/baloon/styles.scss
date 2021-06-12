@@ -1,0 +1,66 @@
+section {
+  width: 520px;
+  height: 520px;
+  // background-color: tomato;
+
+}
+
+header {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 64px;
+  height: 148px;
+  border-radius: 50%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: whitesmoke;
+  z-index: 4;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+
+  > div:nth-child(1) {
+    border-radius: 120px;
+    border-bottom-left-radius: 600px;
+    border-bottom-right-radius: 120px;
+    border-top-left-radius: 320px;
+    border-top-right-radius: 380px;
+
+    background-color: tomato;
+    width: 400px;
+    height: 520px;
+  }
+}
+
+footer {
+  position: relative;
+  transform: translateX(148px) rotate(-120deg);
+  z-index: 1;
+  --string-color: #aaa;
+
+  > div {
+    background: radial-gradient(16px, transparent, transparent 4px, var(--string-color) 4px, var(--string-color) 10px, transparent 11px);
+    width: 280px;
+    height: 20px;
+    border-radius: 90px;
+    background-size: 30px 40px;
+    position: absolute;
+  }
+
+  > div:nth-child(1) {
+    border-radius: 90px;
+  }
+
+  > div:nth-child(2) {
+    top: 19px;
+    left: 15px;
+    background-position: 0px -20px;
+  }
+}
