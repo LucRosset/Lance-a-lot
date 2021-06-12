@@ -8,6 +8,7 @@ public class Move : MonoBehaviour
     [SerializeField] private float maxVelocity = 2f;
 
     private Rigidbody2D myRigidbody;
+    private bool onGround = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,20 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer(Input.GetAxis("Horizontal"));
+        if (onGround)
+            MovePlayer(Input.GetAxis("Horizontal"));
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Wall")
+            onGround = true;
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.tag == "Wall")
+            onGround = false;
     }
 
     private void MovePlayer(float direction)

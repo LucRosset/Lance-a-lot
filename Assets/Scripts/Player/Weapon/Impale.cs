@@ -24,7 +24,8 @@ public class Impale : MonoBehaviour
         if (!enemyDeath)
             return;
         GameObject newWeaponPiece = enemyDeath.SpawnDeadEnemy();
-        HingeJoint2D myFixedJoint = gameObject.AddComponent<HingeJoint2D>();
-        myFixedJoint.connectedBody = newWeaponPiece.GetComponent<Rigidbody2D>();
+        FixedJoint2D myJoint = gameObject.AddComponent<FixedJoint2D>();
+        myJoint.anchor = other.contacts[other.contacts.Length - 1].point;
+        myJoint.connectedBody = newWeaponPiece.GetComponent<Rigidbody2D>();
     }
 }

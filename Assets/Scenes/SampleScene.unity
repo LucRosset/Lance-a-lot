@@ -786,6 +786,7 @@ GameObject:
   - component: {fileID: 900923325}
   - component: {fileID: 900923324}
   - component: {fileID: 900923326}
+  - component: {fileID: 900923327}
   m_Layer: 9
   m_Name: Lance
   m_TagString: Untagged
@@ -869,6 +870,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationTorque: 3000
   maxVelocity: 1.5
+--- !u!114 &900923327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900923322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9083b90c3646ff4c96a687d3abaf576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1128214264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,12 +1616,12 @@ PrefabInstance:
     - target: {fileID: 2569129244700406857, guid: 77ee496bd8cc9e94996668452b0a1dc4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.45
+      value: 10.41
       objectReference: {fileID: 0}
     - target: {fileID: 2569129244700406857, guid: 77ee496bd8cc9e94996668452b0a1dc4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 7.09
       objectReference: {fileID: 0}
     - target: {fileID: 2569129244700406857, guid: 77ee496bd8cc9e94996668452b0a1dc4,
         type: 3}
