@@ -17,6 +17,7 @@ public class Move : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
+        Debug.Log(myCollider);
     }
 
     void FixedUpdate()

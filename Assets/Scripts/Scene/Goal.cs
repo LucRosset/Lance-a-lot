@@ -15,4 +15,9 @@ public class Goal : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        
+    }
 }
