@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveLance : MonoBehaviour
 {
     [SerializeField] private float rotationTorque = 2500f;
-    [SerializeField] private float maxVelocity = 1.5f;
+    [SerializeField] private float maxVelocity = 5f;
     // DONT CHANGE THE MASS! IT MESSES UP THE VELOCITY CAP!
 
     private Rigidbody2D myRigidbody;
