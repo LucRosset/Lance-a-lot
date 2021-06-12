@@ -44,14 +44,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Weapon
+    uniqueID: 3867982735
+    locked: 0
   - name: Player
     uniqueID: 3775101443
     locked: 0
   - name: Hazard
     uniqueID: 3897560863
-    locked: 0
-  - name: Weapon
-    uniqueID: 3867982735
     locked: 0
   - name: Enemy
     uniqueID: 2626970689
