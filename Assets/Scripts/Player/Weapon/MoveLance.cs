@@ -5,6 +5,8 @@ using UnityEngine;
 public class MoveLance : MonoBehaviour
 {
     [SerializeField] private float rotationTorque = 1f;
+    [SerializeField] private float maxVelocity = 1.5f;
+    // DONT CHANGE THE MASS! IT MESSES UP THE VELOCITY CAP!
 
     private Rigidbody2D myRigidbody;
 
@@ -12,6 +14,15 @@ public class MoveLance : MonoBehaviour
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate()
+    {
+        myRigidbody.angularVelocity = Mathf.Clamp(
+            myRigidbody.angularVelocity,
+            -maxVelocity,
+            maxVelocity
+        );
     }
 
     // Update is called once per frame
