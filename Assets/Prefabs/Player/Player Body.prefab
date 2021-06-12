@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4305244077052787914}
   - component: {fileID: 4305244077052787915}
   - component: {fileID: 4305244077052787916}
-  - component: {fileID: 4305244077052787917}
   - component: {fileID: 4305244077052787918}
+  - component: {fileID: 1977501002}
   m_Layer: 8
   m_Name: Player Body
   m_TagString: Untagged
@@ -131,7 +131,21 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 360
---- !u!61 &4305244077052787917
+--- !u!114 &4305244077052787918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305244077052787912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27950bc9a3ad782419b339490262f204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushForce: 1500
+  maxVelocity: 2
+--- !u!61 &1977501002
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,20 +171,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4305244077052787918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4305244077052787912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27950bc9a3ad782419b339490262f204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pushForce: 1500
-  maxVelocity: 2
 --- !u!1 &4305244077735130109
 GameObject:
   m_ObjectHideFlags: 0
