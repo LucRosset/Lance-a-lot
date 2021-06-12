@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class MoveLance : MonoBehaviour
 {
-    [SerializeField] private float rotationTorque = 1f;
+    [SerializeField] private float rotationTorque = 2500f;
     [SerializeField] private float maxVelocity = 1.5f;
     // DONT CHANGE THE MASS! IT MESSES UP THE VELOCITY CAP!
 
     private Rigidbody2D myRigidbody;
+    private PlayerPivot pivot;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        pivot = GetComponent<PlayerPivot>();
     }
 
     void FixedUpdate()
@@ -36,6 +38,7 @@ public class MoveLance : MonoBehaviour
 
     private void Rotate(float direction)
     {
-        myRigidbody.AddTorque(rotationTorque * direction * Time.deltaTime);
+        float appliedTorque = rotationTorque * (pivot.lastIndex + 1f);
+        myRigidbody.AddTorque(appliedTorque * direction * Time.deltaTime);
     }
 }

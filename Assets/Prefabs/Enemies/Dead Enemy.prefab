@@ -145,6 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impaleDistance: 0.8
+  spikes:
+  - {fileID: 4120365431256699599}
+  - {fileID: 1824270435643677939}
 --- !u!1 &6209998527938789764
 GameObject:
   m_ObjectHideFlags: 0

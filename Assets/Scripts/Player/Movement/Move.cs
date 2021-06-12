@@ -8,12 +8,15 @@ public class Move : MonoBehaviour
     [SerializeField] private float maxVelocity = 2f;
 
     private Rigidbody2D myRigidbody;
-    private bool onGround = true;
+    private Collider2D myCollider;
+
+    private Collider2D[] colliders = new Collider2D[0];
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        myCollider = GetComponent<Collider2D>();
     }
 
     void FixedUpdate()
@@ -30,20 +33,17 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (onGround)
+        // if(CheckGround())
             MovePlayer(Input.GetAxis("Horizontal"));
     }
 
-    void OnCollisionEnter(Collision other)
+    private bool CheckGround()
     {
-        if (other.gameObject.tag == "Wall")
-            onGround = true;
-    }
-
-    void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.tag == "Wall")
-            onGround = false;
+        myCollider.GetContacts(colliders);
+        foreach (Collider2D col in colliders)
+            if(col.tag == "Wall")
+                return true;
+        return false;
     }
 
     private void MovePlayer(float direction)
