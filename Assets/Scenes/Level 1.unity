@@ -1164,108 +1164,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 801887012}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &996542586 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 981486927798409241, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 981486928247955557}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &996542591
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996542586}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 90244debcfc1d40489be970b4cf1a676, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &1002014103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2653509137612096301, guid: bbef7c3b97b09fd49be5a223853af41e,
@@ -2952,26 +2850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 981486927798409242, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: orthographic size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 981486927798409242, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.32980543
-      objectReference: {fileID: 0}
-    - target: {fileID: 981486927798409242, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.5283019
-      objectReference: {fileID: 0}
-    - target: {fileID: 981486927798409242, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.21680315
-      objectReference: {fileID: 0}
     - target: {fileID: 981486927798409445, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
         type: 3}
       propertyPath: m_RootOrder
@@ -3037,16 +2915,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1977501001}
-    - target: {fileID: 981486928464965374, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 981486928464965374, guid: 37fb4d88197a69e43bb56ff4ea6af1e9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.5799994
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37fb4d88197a69e43bb56ff4ea6af1e9, type: 3}
 --- !u!1001 &2002220453751103625
