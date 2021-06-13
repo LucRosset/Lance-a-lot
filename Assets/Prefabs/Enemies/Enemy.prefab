@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadEnemyPrefab: {fileID: 2569129244700406856, guid: 77ee496bd8cc9e94996668452b0a1dc4,
     type: 3}
-  deathCry: {fileID: 8300000, guid: 3d9d3e893b41a7a4498692438afaed11, type: 3}
+  deathCry: {fileID: 8300000, guid: 6636c47302d04ec40a4e090d815709de, type: 3}
 --- !u!82 &1975457607332709062
 AudioSource:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3d9d3e893b41a7a4498692438afaed11, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6636c47302d04ec40a4e090d815709de, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

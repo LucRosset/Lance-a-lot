@@ -10,7 +10,9 @@ public class SceneLoader : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("Restart"))
-            Restart(1f);
+            Restart(1.5f);
+        if (Input.GetButtonDown("Title"))
+            LoadMenu(2f);
     }
 
     public void Startgame()
@@ -28,9 +30,9 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(WaitToLoad(delay, SceneManager.GetActiveScene().name));
     }
 
-    public void LoadMenu()
+    public void LoadMenu(float delay)
     {
-        StartCoroutine(WaitToLoad(2f, "Title"));
+        StartCoroutine(WaitToLoad(delay, "Title"));
     }
 
     IEnumerator WaitToLoad(float delay, string scene)

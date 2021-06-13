@@ -11,7 +11,7 @@ public class EnemyDeath : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = FindObjectOfType<Camera>().GetComponent<AudioSource>();
     }
 
     public GameObject SpawnDeadEnemy()

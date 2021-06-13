@@ -12,7 +12,7 @@ public class PopBaloon : MonoBehaviour
     private void Start()
     {
         sceneLoader = FindObjectOfType<SceneLoader>();
-        audioSource = GetComponent<AudioSource>();
+        audioSource = FindObjectOfType<Camera>().GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
