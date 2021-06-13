@@ -18,6 +18,11 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(WaitToLoad(2f, "Level 1"));
     }
 
+    public void LoadScene(string sceneName)
+    {
+        StartCoroutine(WaitToLoad(2f, sceneName));
+    }
+
     public void Restart(float delay)
     {
         StartCoroutine(WaitToLoad(delay, SceneManager.GetActiveScene().name));

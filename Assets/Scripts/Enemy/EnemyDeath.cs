@@ -5,6 +5,14 @@ using UnityEngine;
 public class EnemyDeath : MonoBehaviour
 {
     [SerializeField] private GameObject deadEnemyPrefab = null;
+    [SerializeField] private AudioClip deathCry = null;
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public GameObject SpawnDeadEnemy()
     {
@@ -13,6 +21,7 @@ public class EnemyDeath : MonoBehaviour
             transform.position,
             transform.rotation
         );
+        audioSource.PlayOneShot(deathCry);
         Destroy(gameObject);
         return deadEnemy;
     }
